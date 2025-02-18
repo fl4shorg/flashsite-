@@ -1,0 +1,38 @@
+.message-container {
+    background: #000000;
+    border: 2px solid #00ff00;
+    font-family: 'Courier New', monospace;
+    padding: 12px;
+    margin: 8px 0;
+}
+
+.message-user {
+    color: #00ff00;
+}
+
+.message-ai {
+    color: #00ffff;
+}
+
+.input-field {
+    background: #000000;
+    border: 2px solid #00ff00;
+    color: #00ff00;
+    font-family: 'Courier New', monospace;
+    padding: 8px;
+    width: 100%;
+}
+
+.loading-dots {
+    color: #00ff00;
+}
+
+.loading-dots span {
+    animation: loadingDots 1s infinite;
+}
+
+@keyframes loadingDots {
+    0%, 20% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 0; }
+}

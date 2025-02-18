@@ -1,0 +1,30 @@
+.cursor-blink {
+    animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+
+.scanline {
+    background: rgba(255, 255, 255, 0.1);
+    height: 2px;
+    position: absolute;
+    width: 100%;
+    animation: scanline 6s linear infinite;
+}
+
+@keyframes scanline {
+    0% { top: 0; }
+    100% { top: 100%; }
+}
+
+.boot-sequence {
+    animation: bootUp 2s steps(30) forwards;
+}
+
+@keyframes bootUp {
+    from { height: 0; }
+    to { height: 100%; }
+}
